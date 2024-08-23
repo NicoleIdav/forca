@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/f">
+
+    <TextView
+        android:id="@+id/textTentativas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tentativas: 5"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textOculto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="______"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editEntrada"
+        android:layout_marginTop="20dp"
+        android:maxLength="1"
+        android:inputType="text"
+        android:hint="Digite Uma Letra"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adivinhar"
+        android:layout_marginTop="20dp"
+        android:id="@+id/buttonAdivinhar"/>
+
+    <TextView
+        android:id="@+id/textStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+
+
+    <ImageView
+        android:id="@+id/imagePalavra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Imagem da Palavra"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/buttonNovoJogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Novo Jogo"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
